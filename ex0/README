@@ -1,0 +1,36 @@
+roigreenberg
+305571234
+roi greenberg
+
+I discussed the exercise with: Oz Golan.
+
+=============================
+=  README for ex0: Basics   =
+=============================
+
+
+usage:  1. python Hello.py , HelloTurtle.py <print_"Hello World">
+	2. ex0.txt <Answer to the questions>
+
+==================
+=  Description:  =
+==================
+
+In the exercise I asked to print "Hello World" in python in 2 different ways,
+standard and with 'Turtle' and I needed to answer several questions.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file
+ex0.txt		The answer to the Questions
+Hello.py	Print "Hello World" standard way
+HelloTurtle.py	print "Hello World" with 'Turtle'
+
+======================
+=  Special Comments  =
+======================
+
+
+

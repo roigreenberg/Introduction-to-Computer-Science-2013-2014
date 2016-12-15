@@ -1,0 +1,64 @@
+roigreenberg
+
+305571234
+
+Roi Greenberg
+
+
+===================================
+=  README for ex7: Twitter trends =
+===================================
+
+
+usage:
+python3 trends.py -p 	-> print sentiment
+python3 trends.py -t 	-> run doctests
+python3 trends.py -d 	-> draw centered map
+python3 trends.py -s 	-> draw state sentiments
+python3 trends.py -m 	-> draw map for term
+python3 trends.py -b 	-> draw map by hour
+python3 trends.py -c 	-> containing state
+
+==================
+=  Description:  =
+==================
+
+
+
+
+tweet.py: implementation for the class Tweet.
+              An instance of the type Tweet is initialized with the following parameters:
+              - text: a string, the text of the tweet. 
+              - time: a datetime object, when the tweet was posted. 
+              - latitude: a floating-point number, the latitude of the tweet's location. 
+              - longitude: a floating-point number, the longitude of the tweet's location. 
+              - get_text() - Returns the text of the tweet. 
+              - get_time() - Returns a datetime object, when the tweet was posted. 
+              - get_location() - returns a Position. (Position is a class defined at the top of geo.py) 
+              - get_words() - Returns an ordered list of all words in the tweet. We define a "word"
+                              as any consecutive substring of text that consists 
+                              ONLY of ASCII letters  converted to lowercase. 
+              - get_sentiment(word_sentiments) - Returns the sentiment of the tweet, that is, 
+                             the average sentiment of all the words in the tweet that have a sentiment. 
+                             Returns None if none of the words have a sentiment. 
+
+geo_tweet_tools.py: 
+	1. find_centroid: calculate the centeroid and area of polygon
+        2. find_center:  calculate the center of several polygons
+        3. find_closest_state: find the closest state to the tweet
+	4. find_containing_state: find the state containing the tweet
+        5. group_tweets_by_state: create a dictionary that group tweets by  their state as key
+
+nation_mood.py: implement some function that
+        1. most_talkative_state: find the most talkative state
+        2. average_sentiments: create a dictionary from state to average of the tweets  sentiments
+        3. group_tweets_by_hour: create a list of lists of hours so that every list contain the tweet 
+                            that sent in the same hour
+=============================
+=  List of submitted files: =
+=============================
+
+README
+tweet.py    	
+geo_tweet_tools.py
+nation_mood.py

@@ -1,0 +1,35 @@
+roigreenberg
+305571234
+roi greenberg
+
+================================
+=  README for ex3: Retirement  =
+================================
+	
+
+
+==================
+=  Description:  =
+==================
+
+The function calculate the pension in given amount of year with constant rate (task 1)
+or variable rates (task 2).
+Also it can find the best fund for your pension.(task 3)
+In task 4 you can check the growth rate in a spesific year(4.1) or update the list of 
+the growth rates after the market inflation(4.2).
+In the last task(5) you can calculate your retirement saving after your yearly withdraw.
+
+
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file
+ex3.py		pension, growth rates and retirement caculations
+
+======================
+=  Special Comments  =
+======================
+

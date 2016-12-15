@@ -1,0 +1,146 @@
+roigreenberg
+305571234
+Roi Greenberg
+
+I discussed the exercise with: Roi Greenberg, Naama Antebi.
+
+
+==================
+= README for ex8 =
+==================
+
+==================
+=  Description:  =
+==================
+
+
+Part 1: Hash functions:
+
+Q1:
+===
+h0-	The function maps everything to zero
+h1-	The function transform the first letter of the recivied key into a 
+	    number by using 'ord' function then divide it (module) by m
+h2-	The function use 'ord' in order to sum the word letters numeric
+	    value and divide (module) the sum by m
+h3-	The function use 'ord' in order to sum the word letters numeric
+	    value, in each iteration the function multiplies the current
+	    sum by 128 and divide (module) the final sum by m
+h4-	The function take a random number in the hashtable size range
+h5-	There are 3 situations in the function in regard to the key:
+	     1. string - use "str_to_int" that act on the key's binary code 
+        	in order to recieve an integer.
+	     2. key is a type of collections.Hashable - return the key's 
+		"__str__" value
+	     3. integer - divide (module) the key by m
+h6-	The function use the key's length. if it 0, the function return zero
+	    if it not 0, it use 'ord' in order to get the numeric value of the
+	    letter, then change the binary value and divide (module) by m
+h7-	The function using the cryptographic hash function "md5"
+h8-	The function using the cryptographic hash function "sha1"
+h9-	The function using the python built-in hash function
+
+Q2:
+===
+h9 is the best function. as it seen from the last question it have no drawback.
+also for string type of data, h5 works good as well
+
+Q3:
+===
+in case M greater then N the collisions number reduces
+in case N greater then M it increase (exeppt in h0 which had no difference)
+
+Q4:
+===
+by using prime number, the collisions will reduce because the division remainder
+will spread more
+
+Q5:
+===
+h0- 	the function is not effective at all because it maps everything to 0
+h1-	advantage- all values orderd in groups by their first latter
+	drawbacks- the collisions are big, not work on numbers
+h2-	advantage- less collision then h1 function
+	drawbacks- same-letters words will get the same value also not work
+                   on numbers
+h3-	advantage- less collision the h2 function because of noticing to 
+		   the order of the latter
+	drawbacks- not work on numbers
+h4-	advantage- in the best situation the function will map the keys equelly
+	drawbacks- in the worst situation the function will map the keys to the
+   		   same value
+h5-	advantage- the function is efficient because it divides the cases by
+		   the inputs types
+	drawbacks- not working well with numbers
+h6-	advantage- the function is efficient because it change the binary value
+		   will decrease the collision
+	drawbacks- if many key's with a length of 0 the collision will increase
+h7-	advantage- the collision is very small
+	drawbacks- take a long time to get the hash value
+h8-	advantage- the collision is very small
+	drawbacks- take a long time to get the hash value
+h9-	advantage- the function have only advantage, it run fast, take care of 
+                   any type of data and have a big range of hash value
+
+
+Part 2: sllist_utils.py
+
+Description: implement some function for a linked lists
+1. reverse - reverse the list
+	complexity - O(n) - the function run on each node one time
+2. merge_lists - merge to lists into one
+	complexity - O(n) - the function run on each node from both list one time
+3. contains_cycle - check if list have a cycle
+	complexity - O(n) - the function run in a loop and do one action each time
+4. get_item - return the data of the k'th element
+	complexity - O(n) -  the function use list_len which is O(n)
+5. is_palindrome - check if list s palindrome
+	complexity - O(n) - the function run on each node constant number of times
+6. have_intersection - check if 2 lists connect in same point
+	complexity - O(n) -  the function use reverse() which is O(n)
+7. slice - slice the list according to the given arguments
+	complexity  - O(n) - the function run on each node one time
+8. merge_sort - sort a list in merge_sort algorithem
+	complexity - O(n*log(n)) - the recursion split log(n) times and for each time
+		     sort the list by O(n) actions
+9. list_len(help function) - find the length of the list
+	complexity - O(n) - the function run on each node one time
+
+Part 3: skipi_list.py
+
+Description: implement a class for skipilist
+the class has the following functions:
+0. __init__ - Constructs an empty SkipiList
+1. add_first - add new node to the begining of the list
+2. remove_first - remove the first node
+3. add_last - add new node to the end of the list
+4. remove_last - remove the last node
+5. remove_node - remove the given node
+6. getitem - return the data of the k'th element
+
+
+by using skipi list in part 2 the the complexity will be:
+
+1. reverse - 	       O(n) - the function still need to run on each node one time
+2. merge_lists -       O(n) - the function still need to run on each node from 
+                              both list one time
+3. contains_cycle - in skipi list because of the tail it not supposed be cycle
+	            (anther option - O(1) to check if tail.next is not None)
+4. get_item - 	       O(n) - in worse case function need to run over all the list
+5. is_palindrome -     O(n) - the function still need to run on each node constant number of times
+6. have_intersection - O(1) - the function only need to compare the tails
+7. slice -  	       O(n) - the function still need to run on each node one time
+8. merge_sort -        O(n*log(n)) - the recursion still need to split log(n) times 
+                                     and for each time sort the list by O(n) actions
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README
+sllist_utils.py
+skipi_list.py
+
+
+

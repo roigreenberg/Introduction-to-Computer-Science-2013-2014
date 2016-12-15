@@ -1,0 +1,35 @@
+roigreenberg
+305571234
+roi greenberg
+
+==================================
+=  README for ex1: Einstain game =
+==================================
+
+
+usage:  1. python ex1.py <print 1089 for any 3 digit number>
+
+
+==================
+=  Description:  =
+==================
+
+In the exercise I ask the user to choose secretly 3 digit number and print always "1089"
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file
+ex1.py		print 1089 for any 3 digit number
+
+======================
+=  Special Comments  =
+======================
+
+The program do not chech if the input number is correct (3 digit and the first and last digit are different.
+For checking that the following lines should be added:
+
+while int(input_number/100)==int(input_number%10) or input_number>1000: # check if the number is correct
+    input_number = int(input("Please choose another 3 digit number:"))
+

@@ -1,0 +1,42 @@
+roigreenberg
+305571234
+roi greenberg
+
+================================
+=  README for ex4: Pensioners  =
+================================
+
+
+
+==================
+=  Description:  =
+==================
+
+ex4: Task 1: The function calculate (in arithmetics way) how much expences can be wasted any year
+             in given amount of year with constant rate so at the end of your life
+             you left with no money.
+     Task 2: The function execute a bubble sort for sorting a list from minimum to maximum
+             according to the second value.
+     Task 3: The function find the most expensive house you can afford so you won't be in debts.
+     Task 5: The functions The function find the most fun house you can afford so you won't 
+             be in debts.
+battleship: some function for Battleship game.
+     Task 1: The function create a new board in a given size. If no height given, create a square,
+             If nothing given create 10X10 board
+     Task 2: The function try to place a ship on the board if it not step-out from the board and not
+             and not placed in another ship place.
+     Task 3: The function fire on the board and try to destroy the ships
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file
+ex4.py	        retirement calculation (expenses and houses) and sorting function.
+battleship.py   execute Battleship game. create a board, place ships and 
+                fire on the ships and try do desrtoy them.
+
+======================
+=  Special Comments  =
+======================
+In ex4 task 1 I choose to use the arithmetics way

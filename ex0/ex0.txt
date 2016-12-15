@@ -1,0 +1,30 @@
+1. '.' is the current directory. it can be used instead of writing the whole path.
+   '..' is the parent directory. it can use with the command 'cd' to go back to the parent directory or using files in the parent directory.
+Both are using mainly for shortcut, instead of whiting the whole path every time.
+
+2. The relative path is the path from the directory you are in or from your home-directory[by using ~] , while absolute path is the full path to the root directory.
+The absolut path always begin with / [=root directory] while the relative path begin with . or .. or ~ or NAME [./ex0 ; .. ; intro2cs/ex0]
+
+3. '*' is use instead of 0 to many variables. . For example if you want to use 'ls' or 'cp' for all .py file you will write 'ls *.py' or 'cp *.py' and it will show/copy both Hello.py and HelloTurtle.py.
+   '?' can use instead of 1 variable. For example if you want to use 'ls' or 'cp' for a1.py , a2.py , a3.py you will write 'ls a?.py' or 'cp a?.py'.
+
+4. & mean that the command will run on the backgraund so it wont interapt to the work.
+In case you forgot to use it you can use 'ctrl-c' to stop the command or ctrl+z to suspend the command and then you can use 'bg' to "move" the command to the background. 
+
+5. by the command 'ls -l path/FILENAME' you can see the permissons of a given file.
+The permissions are defines who can read/white/execute.
+
+6. In case you delete a file or want to restore file for any reason, you reach to the ' snapshot' directory in the same directory you wish to restore from and type 'cd .snapshot'. then you choose the date you want by typing 'cd .DATE'[DATE=hourly.1 nightly.3 and etc.] then copy the file you want to the directory you want by 'cp FILE_NAME path/FILE_NAME'.
+
+7.	grep - use to print only the line with a given string.
+For example - if you want to show list of the files\directories that have the string 'ex' un their name you can use the command 'ls -l | grep ex'.
+	cat - print the entire file\s, you can choose to add to the print options like, number every line, put $ at the end of every line and etc.
+For example - if you want to see where the lines in a file are ended you can use 'cat -E FILENAME' and every line will end with $.
+[
+asdsdasdasdasdasdasdasdasds$
+qwsdsafsdlfjhnadjfbadjvhbdafvjhbdvjohbdavoahdbvoadhbvaodhvb
+adfvhbadvhbadovbhaduovbaduofvb$
+]
+	cal - show a calender.
+For example if you want to see a calender of september 2013 you use 'cal 9 2013'.
+

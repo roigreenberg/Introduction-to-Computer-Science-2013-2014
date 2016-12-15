@@ -1,0 +1,35 @@
+roigreenberg
+305571234
+roi greenberg
+
+================================
+=  README for ex5: Recursion   =
+================================
+
+
+
+==================
+=  Description:  =
+==================
+
+NonRecursiveMystery: Implement a recursive function for sum of divisors in iterative way 
+                     (divisors=without remainder).
+GetToTheZero: Check if James Bond can pass the corridor undetected.
+AlignDNA: Task 1: Calculate the match between 2 DNA strands with 3 optinal score for match, missmatch and gap.
+          Task 2: Find the match between two unaligned DNA  strands that give the best score
+                  as calculate in task 1
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		        This file
+NonRecursiveMystery.py	Iterative way for recursive function for sum of divisors
+GetToTheZero.py         Check if James Bond can pass the corridor undetected
+AlignDNA:               calculate the match between 2 DNA strands 
+                        and find the best match between two unaligned DNA  strands
+
+======================
+=  Special Comments  =
+======================
+

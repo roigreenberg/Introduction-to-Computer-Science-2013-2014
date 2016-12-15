@@ -1,0 +1,35 @@
+roigreenberg
+305571234
+roi greenberg
+
+==================================
+=  README for ex2: Flow Control  =
+==================================
+
+
+usage:  1. python ex2_square.py
+	2. python ex2_rpsls.py
+
+
+==================
+=  Description:  =
+==================
+
+In Task 1 I asked the user for number 'n' and printed a square of '#'
+	in size of (2n+1)*(2n+1) with a rhombus inside with edge
+	of n stars inside.
+In task 2 I asked the user to choose number of rounds and then play 
+	Rock-Paper-Scissors-Lizard-Spock until someone win. 
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file
+ex2_square.py	print square with a rhombus inside it
+ex2_rpsls.py	playing Rock-Paper-Scissors-Lizard-Spock Game
+
+======================
+=  Special Comments  =
+======================
+

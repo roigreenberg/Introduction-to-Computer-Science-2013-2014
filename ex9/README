@@ -1,0 +1,94 @@
+roigreenberg
+305571234
+Roi Greenberg
+
+
+
+==================
+= README for ex9 =
+==================
+==================
+=     usage:     =
+==================
+
+python3 hzip.py -h, --help            show this help message and exit
+python3 hzip.py	-o OUTFILE, --outfile OUTFILE
+                        Name of output file
+python3 hzip.py	-s SUFFIX, --suffix SUFFIX
+                        Suffix to use instead of .hz
+python3 hzip.py	-f, --force           Force compression and overwrite output file if it
+                        exists
+python3 hzip.py	-l LEVEL, --level LEVEL
+                        Maximum levels of compression
+python3 hzip.py	-a, --alwayscompress  Compress to max level even if it would make output
+                        larger
+
+python3 hunzip.py  -h, --help            show this help message and exit
+python3 hunzip.py  -o OUTFILE, --outfile OUTFILE
+                        Name of output file
+python3 hunzip.py  -s SUFFIX, --suffix SUFFIX
+                        Default suffix to remove instead of .hz
+python3 hunzip.py  -S OUTSUFFIX, --outsuffix OUTSUFFIX
+                        Default suffix to add if instead of .out
+python3 hunzip.py  -f, --force           Force decompression and overwrite output file if it
+                        exists
+
+==================
+=  Description:  =
+==================
+
+Question:
+1) in the zip process we need to run over the data twice.
+	one time to create the codebook and second time to
+	compress the data.
+   in the unzip process we need only 1 run to get both codebook
+	and data
+
+2) there are 2 ways to process the compress:
+	a. run over the data twice as mention in question 1 whice take more memory
+	b. read the data only once and reset the iterator to the begining of the file
+	   which only cost 1 use of memory
+
+hzlib.py:
+
+an implementation of Huffman compression code for coding and decoding of
+files. the file consist of several functions:
+ *) symbol_count: a function that returns a dictionary of 
+    char: char-count-in-text pairs.
+ *) make_huffman_tree: returns a tree which is represents the frequencies of
+    different chars of input, according to Huffman code algorithm.
+ *) build_codebook: returns a table of char: code pairs, given a Huffman tree
+ *) build_canonical_codebook: returns a canonical codebook.
+ *) build_decodebook: the function returns a dictionary which is a decoding
+    compatible to the input codebook.
+ *) compress: the function create an iterator of "0" or "1" as ints, after 
+	iterating on corpus input.
+ *) decompress: the function run over the decoding bits of coded bits input
+    and create an iterator of 0 or 1 as an int.
+ *) pad: the function run over each eight sequence bits out of the nput,
+    adds the 1 as a final bit and appends zeros for the total length be
+    divided by 8. the function create an iterator of 0 or 1 as an ints.
+ *) unpad: the function run over all bytes of input, taking off the '0' and
+    '1' on top of it and create an iterator of 0 or 1 as ints.
+ *)join: the function run over the bytes of input (first codebook then
+    data) and yields the codebook vals which appear, then create an iterator of 
+	the data items.
+ *)split: that function split the output of the function join to data and codebook.
+    the function return a tuple which is consist of a dictionary - canonical
+    coding table and an iterator which iterate over rest of byteseq as
+    byte sequent.
+
+hzip.py: compress a file using hzlib.zip functions
+hunzip.py: decompress a file using hzlib.zip functions
+
+=============================
+=  List of submitted files: =
+=============================
+
+README
+hzlib.py
+hzip.py
+hunzip.py
+
+
+

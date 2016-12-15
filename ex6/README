@@ -1,0 +1,59 @@
+roigreenberg
+305571234
+roi greenberg
+
+================================
+=  README for ex6: One Liners  =
+================================
+
+
+
+==================
+=  Description:  =
+==================
+
+in oneliners.py I implement several tasks:
+
+is_two_palindrome: The function tests if the given string is a “two palindrome” or not.
+                   A string is a palindrome if reversing it does not change it.
+
+uni_sort:          The function combines two unsorted lists of integers into one sorted list.
+
+dot_product:       The function returns the dot product of two vectors, represented as lists.
+
+list_intersection: The function combines two unsorted lists of integers into one sorted.
+                   list contain exactly those integers that appear in both input lists.
+
+list_difference:   The function combines two unsorted lists of integers into one sorted
+                   list contain only those integers that appear in just one of the input lists.
+
+random_string:     The function generates a random string of a given length using only lower-case characters
+	I have used the imports randint (from module random) and string
+	1)randint - I used randint in order to create a random letter by giving chr() a random number in the
+	 	    range of numbers that represent lower-case letters.
+	2)string - i used "join" from the string module in order to convert the list of the random letters
+	 	   into a string as requsted
+
+word_mapper:       The function returns a dictionary mapping from the words in the
+                   input text to their number appearances
+	I have used the import re
+	By using re.sub() I could convert every nonletter in the string(converted to lower-case letters)
+        into a whitespaces then I could use .split in order to create a list containing only the words
+	from the string.
+
+gimme_a_value:     The function create a generator that gets two inputs, a function(f) and a starting point (x0).
+                   The generator computes a sequence of values (x1,x2...) of the function.
+                   For all i>=0 The i-th call to the generator returns the value x(i)=f(x(i-1)
+                   The first call returns x0 (the initial value)
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file
+oneliners.py	Implement several tasks in only one or very few code line
+
+======================
+=  Special Comments  =
+======================
+
